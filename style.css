@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lobster&family=Ubuntu+Mono&display=swap');
+
 :root {
-  --primary-color: rgb(255, 92, 92);
-  --primary-variant: #ff2d2d;
-  --secondary-color: #1b9999;
+  --primary-color: rgb(78, 99, 98);
+  --primary-variant: #40514E;
+  --secondary-color: #11999E;
   --on-primary: rgb(250, 250, 250);
-  --on-background: rgb(66, 66, 66);
-  --on-background-alt: rgba(66, 66, 66, 0.7);
+  --on-background: rgb(19, 134, 125);
+  --on-background-alt: rgba(19, 134, 125, 0.7);
   --background: rgb(255, 255, 255);
   --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
 }
@@ -26,6 +28,7 @@ html {
 
 body {
   margin: 0;
+  font-family: Kalam, sans-serif;
   color: var(--on-background);
   background-color: var(--background);
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%2332b3b5' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E");
@@ -40,6 +43,7 @@ section {
 }
 
 h1 {
+  font-family: Lobster, sans-serif;
   font-size: 100px;
   margin-bottom: 0;
 }
@@ -53,6 +57,7 @@ h2 {
 nav {
   z-index: 10;
   position: fixed;
+  font-family: Ubuntu Mono, sans-serif;
   font-size: 20px;
   letter-spacing: 3px;
   padding: 20px;
@@ -99,6 +104,10 @@ img {
   width: 300px;
 }
 
+.project-container img {
+    width: 100%;
+}
+
 /* Projects Section */
 .buttons {
   margin-top: 15px;
@@ -124,6 +133,7 @@ button:disabled {
 button:hover:not(.outline) {
   filter: brightness(110%);
 }
+
 
 .primary {
   background: var(--primary-color);
@@ -152,7 +162,6 @@ button:hover:not(.outline) {
 }
 
 .text-box {
-  width: 40%;
   text-align: justify;
   background: rgb(0 0 0 / 50%);
   color: var(--on-primary);
@@ -166,14 +175,14 @@ p {
 }
 
 /* Contact Section */
-.fab {
+.fa-brands {
   font-size: 100px;
   margin-right: 50px;
   cursor: pointer;
   color: var(--primary-color);
 }
 
-.fab:hover {
+.fa-brands:hover {
   color: var(--on-background);
 }
 
@@ -251,4 +260,9 @@ input:checked + .slider::before {
 .fas {
   font-size: 30px;
   margin-right: 5px;
+}
+
+.project-container {
+    display: flex;
+    align-items: center;
 }
