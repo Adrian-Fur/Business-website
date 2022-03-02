@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lobster&family=Ubuntu+Mono&display=swap');
 
 :root {
-  --primary-color: rgb(78, 99, 98);
-  --primary-variant: #40514E;
-  --secondary-color: #11999E;
+  --primary-color: #ff5c5c;
+  --primary-variant: #ff2d2d;
+  --secondary-color: #1b9999;
   --on-primary: rgb(250, 250, 250);
-  --on-background: rgb(19, 134, 125);
-  --on-background-alt: rgba(19, 134, 125, 0.7);
+  --on-background: rgb(66, 66, 66);
+  --on-background-alt: rgba(66, 66, 66, 0.7);
   --background: rgb(255, 255, 255);
   --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
 }
 
 [data-theme="dark"] {
-  --primary-color: rgb(150, 65, 255);
+  --primary-color: #9641ff;
   --primary-variant: #6c63ff;
   --secondary-color: #03dac5;
   --on-primary: #000;
@@ -104,69 +104,19 @@ img {
   width: 300px;
 }
 
-.project-container img {
-    width: 100%;
+.project-container {
+  display: flex;
 }
 
-/* Projects Section */
-.buttons {
-  margin-top: 15px;
-  margin-bottom: 50px;
+.project-container .image-container{
+  margin: 25px;
 }
-
-button {
-  min-width: 100px;
-  height: 40px;
-  cursor: pointer;
-  border-radius: 10px;
-  margin-right: 10px;
-  border: 2px solid var(--primary-color);
-  font-size: 15px;
-  outline: none;
-}
-
-button:disabled {
-  opacity: 0.4;
-  cursor: default;
-}
-
-button:hover:not(.outline) {
-  filter: brightness(110%);
-}
-
-
-.primary {
-  background: var(--primary-color);
-  color: var(--on-primary);
-}
-
-.secondary {
-  border: 2px solid var(--secondary-color);
-}
-
-.secondary,
-.secondary:hover,
-.outline.secondary:hover {
-  background: var(--secondary-color);
-  color: var(--on-primary);
-}
-
-.outline {
-  background: var(--background);
-  color: var(--on-background);
-}
-
-.outline:hover {
-  background: var(--primary-color);
-  color: var(--on-primary);
-}
-
 .text-box {
-  text-align: justify;
-  background: rgb(0 0 0 / 50%);
-  color: var(--on-primary);
+  text-align: center;
+  color: white;
   border-radius: 10px;
   padding: 30px;
+  background: rgb(0 0 0 / 50%);
 }
 
 p {
@@ -193,7 +143,7 @@ p {
   z-index: 100;
   position: fixed;
   right: 25px;
-  top: 30px;
+  top: 18px;
 }
 
 .theme-switch-wrapper span {
@@ -260,9 +210,4 @@ input:checked + .slider::before {
 .fas {
   font-size: 30px;
   margin-right: 5px;
-}
-
-.project-container {
-    display: flex;
-    align-items: center;
 }
